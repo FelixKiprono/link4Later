@@ -1,0 +1,14 @@
+body {
+  /* margin: 0px; */
+}
+
+.popupContainer {
+  /* align-items: center; */
+  margin-top: 10px;
+  margin-left: 10px;
+  /* display: flex; */
+  font-size: 5px;
+  height: 300px;
+  /* justify-content: center; */
+  width: 500px;
+}

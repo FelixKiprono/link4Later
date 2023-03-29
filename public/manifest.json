@@ -1,0 +1,33 @@
+{
+    "name": "link4Later",
+    "description": "Save links quickly for later use",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Open the popup"
+    },
+    "options_ui": {
+      "page": "index.html"
+    },
+    "icons": {
+        "16": "logo.png",
+        "48": "logo48.png",
+        "128": "logo192.png"
+    },
+    "background": {
+      "service_worker": 
+        "./static/js/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["./static/js/content.js"]
+      }
+    ],
+    "devtools_page": "index.html",
+    "permissions": [
+      "tabs",
+      "storage"
+    ]
+}
